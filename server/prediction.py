@@ -3,6 +3,7 @@ import json
 import pickle
 import numpy as np
 from flask_cors import CORS, cross_origin
+import contextlib
 #idk whats happening
 
 app = Flask(__name__)
@@ -28,7 +29,8 @@ def result():
     data = np.array(arr)
     data = data.reshape(1,-1)
     print(data)
-    loaded_model = pickle.load(open("careerlast.pkl", 'rb'))
+    with open("careerlast.pkl", 'rb') as f:
+        loaded_model = pickle.load(f)
     predictions = loaded_model.predict(data)  
     print(predictions)
     reso = predictions[0]

@@ -18,6 +18,9 @@ const Quiz = () => {
   const [quiz, setquiz] = useState(true);
   const [results, setresults] = useState();
   const router = useRouter();
+  useEffect(() => {
+    console.log(arr);
+  }, [arr]);
   const url = "https://aspirify-server.vercel.app/prediction";
   // const url = " http://127.0.0.1:5000/prediction";
 

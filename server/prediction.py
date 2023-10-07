@@ -3,8 +3,7 @@ import json
 import pickle
 import numpy as np
 from flask_cors import CORS, cross_origin
-
-
+#idk whats happening
 
 app = Flask(__name__)
 CORS(app)

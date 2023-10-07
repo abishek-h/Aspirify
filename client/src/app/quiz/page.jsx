@@ -18,9 +18,7 @@ const Quiz = () => {
   const [quiz, setquiz] = useState(true);
   const [results, setresults] = useState();
   const router = useRouter();
-  const url =
-    "http://localhost:5000/prediction" ||
-    "https://aspirify-server.vercel.app/prediction";
+  const url = "https://aspirify-server.vercel.app/prediction";
   const retake = () => {
     setarr([]);
     setqno(0);

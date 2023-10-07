@@ -3,7 +3,7 @@ import json
 import pickle
 import numpy as np
 from flask_cors import CORS, cross_origin
-import re
+import sklearn
 
 
 app = Flask(__name__)
@@ -88,6 +88,6 @@ def result():
     return jsonify({
         "role": finalarray
     })
-    
+
 if __name__ == '__main__':
    app.run(debug = True)

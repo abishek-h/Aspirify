@@ -9,6 +9,14 @@ CORS(app)
 
 global datum
 global y
+
+@app.route('/',methods=['GET'])
+@cross_origin()
+def wow():
+    return jsonify({
+        "msg" : "hello we are using flask"
+    })
+
 @app.route('/prediction',methods = ['POST'])
 @cross_origin()
 def result():

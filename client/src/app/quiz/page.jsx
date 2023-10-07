@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SyncLoader from "react-spinners/SyncLoader";
 import ques from "../jsons/ques.json";
 import styles from "./quiz.module.css";
@@ -20,6 +20,7 @@ const Quiz = () => {
   const router = useRouter();
   const url = "https://aspirify-server.vercel.app/prediction";
   // const url = " http://127.0.0.1:5000/prediction";
+
   const retake = () => {
     setarr([]);
     setqno(0);
@@ -32,7 +33,7 @@ const Quiz = () => {
       if (qno < 16) {
         setqno(qno + 1);
       }
-      topping == null ? setarr([...arr, "1"]) : setarr([...arr, topping]);
+      topping == null ? setarr([...arr, 1]) : setarr([...arr, topping]);
       if (qno == 16) {
         setform(false);
       }
@@ -87,7 +88,7 @@ const Quiz = () => {
                             name="topping"
                             checked={topping === dat.id}
                             onChange={(e) => {
-                              settopping(e.target.value);
+                              settopping(parseInt(e.target.value));
                             }}
                             className={styles.input}
                           />

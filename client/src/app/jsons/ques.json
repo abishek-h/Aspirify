@@ -1,12 +1,12 @@
 {
   "answers": [
-    { "ans": "Not interested", "id": "1" },
-    { "ans": "Poor", "id": "2" },
-    { "ans": "Beginner", "id": "3" },
-    { "ans": "Average", "id": "5" },
-    { "ans": "Intermediate", "id": "6" },
-    { "ans": "Excellent", "id": "7" },
-    { "ans": "Professional", "id": "9" }
+    { "ans": "Not interested", "id": 1 },
+    { "ans": "Poor", "id": 2 },
+    { "ans": "Beginner", "id": 3 },
+    { "ans": "Average", "id": 5 },
+    { "ans": "Intermediate", "id": 6 },
+    { "ans": "Excellent", "id": 7 },
+    { "ans": "Professional", "id": 9 }
   ],
   "questions": [
     {

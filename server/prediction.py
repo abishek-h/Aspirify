@@ -3,6 +3,8 @@ import json
 import pickle
 import numpy as np
 from flask_cors import CORS, cross_origin
+import re
+
 
 app = Flask(__name__)
 CORS(app)
@@ -21,9 +23,9 @@ def wow():
 @cross_origin()
 def result():
     datum = request.get_json()
-    y = datum.get("arr",0)
-    print(y)
-    arr = [eval(z) for z in y]
+    arr = datum.get("arr",0)
+    print(arr)
+
     data = np.array(arr)
     data = data.reshape(1,-1)
     print(data)
@@ -86,6 +88,6 @@ def result():
     return jsonify({
         "role": finalarray
     })
-      
+    
 if __name__ == '__main__':
    app.run(debug = True)

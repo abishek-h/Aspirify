@@ -1,0 +1,81 @@
+{
+  "answers": [
+    { "ans": "Not interested", "id": "1" },
+    { "ans": "Poor", "id": "2" },
+    { "ans": "Beginner", "id": "3" },
+    { "ans": "Average", "id": "5" },
+    { "ans": "Intermediate", "id": "6" },
+    { "ans": "Excellent", "id": "7" },
+    { "ans": "Professional", "id": "9" }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "On the options given below, how would you rate your proficiency in Database Fundamentals?"
+    },
+    {
+      "id": 2,
+      "question": "On the options given below, how would you rate your proficiency in Computer Architecture?"
+    },
+    {
+      "id": 3,
+      "question": "On the options given below, how would you rate your proficiency in Distributed Computing Systems?"
+    },
+    {
+      "id": 4,
+      "question": "On the options given below, how would you rate your proficiency in Cyber Security?"
+    },
+    {
+      "id": 5,
+      "question": "On the options given below, how would you rate your proficiency in Computer Networking?"
+    },
+    {
+      "id": 6,
+      "question": "On the options given below, how would you rate your proficiency in Software Development?"
+    },
+    {
+      "id": 7,
+      "question": "On the options given below, how would you rate your proficiency in Programming Skills?"
+    },
+    {
+      "id": 8,
+      "question": "On the options given below, how would you rate your proficiency in Project Management?"
+    },
+    {
+      "id": 9,
+      "question": "On the options given below, how would you rate your proficiency in Computer Forensics Fundamentals?"
+    },
+    {
+      "id": 10,
+      "question": "On the options given below, how would you rate your proficiency in Technical Communication Skills?"
+    },
+    {
+      "id": 11,
+      "question": "On the options given below, how would you rate your proficiency in AI ML?"
+    },
+    {
+      "id": 12,
+      "question": "On the options given below, how would you rate your proficiency in Software Engineering?"
+    },
+    {
+      "id": 13,
+      "question": "On the options given below, how would you rate your proficiency in Business Analysis?"
+    },
+    {
+      "id": 14,
+      "question": "On the options given below, how would you rate your proficiency in Communication Skills?"
+    },
+    {
+      "id": 15,
+      "question": "On the options given below, how would you rate your proficiency in Data Science?"
+    },
+    {
+      "id": 16,
+      "question": "On the options given below, how would you rate your proficiency in Troubleshooting Skills?"
+    },
+    {
+      "id": 17,
+      "question": "On the options given below, how would you rate your proficiency in Graphics Designing?"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  line-height: normal;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+}

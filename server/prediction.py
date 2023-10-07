@@ -21,7 +21,9 @@ def wow():
 @cross_origin()
 def result():
     datum = request.get_json()
-    y = datum["arr"]
+    for x in datum:
+        y = datum[x]
+    print(y)
     arr = [eval(z) for z in y]
     data = np.array(arr)
     data = data.reshape(1,-1)

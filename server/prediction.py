@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request, jsonify
-import json
+from flask import Flask, request, jsonify
 import pickle
 import numpy as np
 from flask_cors import CORS, cross_origin
-import contextlib
+from sklearn.metrics import accuracy_score
+
 #idk whats happening
 
 app = Flask(__name__)
@@ -29,9 +29,11 @@ def result():
     data = np.array(arr)
     data = data.reshape(1,-1)
     print(data)
+
     with open("careerlast.pkl", 'rb') as f:
         loaded_model = pickle.load(f)
     predictions = loaded_model.predict(data)  
+    
     print(predictions)
     reso = predictions[0]
     print(reso)
@@ -77,7 +79,6 @@ def result():
                    15:'Software Tester',
                    16:'Technical Writer'}
                 
-    job = {}
       #job[0] = jobs_dict[predictions[0]]
     index = 1
 

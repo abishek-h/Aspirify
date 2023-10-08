@@ -11,8 +11,5 @@
       "dest": "prediction.py"
     }
   ],
-  "env": {
-    "MODEL_PATH": "model.pkl"
-  },
   "version": 2
 }

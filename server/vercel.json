@@ -1,5 +1,4 @@
 {
-  "runtime": "python@3.10",
   "builds": [
     {
       "src": "prediction.py",

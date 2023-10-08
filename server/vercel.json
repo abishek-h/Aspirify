@@ -10,5 +10,6 @@
       "src": "/(.*)",
       "dest": "prediction.py"
     }
-  ]
+  ],
+  "dependencies": ["numpy", "pandas", "scikit-learn", "joblib"]
 }

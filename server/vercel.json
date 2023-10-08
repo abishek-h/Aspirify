@@ -11,5 +11,7 @@
       "dest": "prediction.py"
     }
   ],
-  "dependencies": ["numpy", "pandas", "scikit-learn", "joblib"]
+  "env": {
+    "MODEL_PATH": "model.pkl"
+  }
 }

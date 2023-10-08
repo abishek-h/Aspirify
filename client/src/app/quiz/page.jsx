@@ -21,9 +21,7 @@ const Quiz = () => {
   useEffect(() => {
     console.log(arr);
   }, [arr]);
-  const url = "https://aspirify-server.vercel.app/prediction";
-  // const url = " http://127.0.0.1:5000/prediction";
-
+  const url = "https://aspirify-backend.onrender.com/prediction";
   const retake = () => {
     setarr([]);
     setqno(0);

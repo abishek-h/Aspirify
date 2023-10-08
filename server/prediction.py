@@ -24,6 +24,6 @@ def result():
         Q={0:'AI ML Specialist',1:'API Integration Specialist',2:'Application Support Engineer',3:'Business Analyst',4:'Customer Service Executive',5:'Cyber Security Specialist',6:'Data Scientist',7:'Database Administrator',8:'Graphics Designer',9:'Hardware Engineer',10:'Helpdesk Engineer',11:'Information Security Specialist',12:'Networking Engineer',13:'Project Manager',14:'Software Developer',15:'Software Tester',16:'Technical Writer'};A=1;print(B);H=[]
         for K in B:H.append(Q[B[K]])
         print(H);return jsonify({'role':H})
-if __name__=='__main__':app.run(debug=True)
+if __name__=='__main__':app.run(debug=True, host="0.0.0.0", port=80)
 
 

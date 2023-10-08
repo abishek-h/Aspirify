@@ -10,8 +10,5 @@
       "src": "/(.*)",
       "dest": "prediction.py"
     }
-  ],
-  "dependencies": {
-    "sklearn": "^1.1.0"
-  }
+  ]
 }

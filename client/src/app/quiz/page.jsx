@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import SyncLoader from "react-spinners/SyncLoader";
 import ques from "../jsons/ques.json";
 import styles from "./quiz.module.css";
@@ -18,9 +18,6 @@ const Quiz = () => {
   const [quiz, setquiz] = useState(true);
   const [results, setresults] = useState();
   const router = useRouter();
-  useEffect(() => {
-    console.log(arr);
-  }, [arr]);
   const url = "https://aspirify-backend.onrender.com/prediction";
   const retake = () => {
     setarr([]);

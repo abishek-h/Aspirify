@@ -57,15 +57,12 @@ const Quiz = () => {
     <div className={styles.king}>
       {quiz && (
         <div className={styles.subking}>
-          <div>
-            <img
-              className={styles.quizimg}
-              src={form ? "./qui.webp" : "./qdone.webp"}
-            ></img>
-          </div>
-          <div className={styles.form}>
-            {form && (
-              <>
+          {form && (
+            <>
+              <div>
+                <img className={styles.quizimg} src="./qui.webp"></img>
+              </div>
+              <div className={styles.form}>
                 <div className={styles.ques}>
                   <span>Question</span>
                   <span>{qno + 1}</span>
@@ -106,26 +103,37 @@ const Quiz = () => {
                     {qno === 16 ? "Submit" : "Next"}
                   </button>
                 </div>
-              </>
-            )}
-            {!form && !loading && (
-              <div className={styles.redirect}>
-                <div className={styles.message}>
-                  Congratulations on completing the quiz!
-                </div>
-                <div>
-                  <button className={styles.bleft} onClick={post} type="button">
-                    Results
-                  </button>
-                </div>
               </div>
-            )}
-            {loading && (
-              <div className={styles.loa}>
-                <SyncLoader color="#da3a00" loading={loading} size={18} />
+            </>
+          )}
+          {!form && (
+            <>
+              <div>
+                <img className={styles.resimg} src="./qdone.webp"></img>
               </div>
-            )}
-          </div>
+              {!form && !loading && (
+                <div className={styles.redirect}>
+                  <div className={styles.message}>
+                    Congratulations on completing the quiz!
+                  </div>
+                  <div>
+                    <button
+                      className={styles.bleft}
+                      onClick={post}
+                      type="button"
+                    >
+                      Results
+                    </button>
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+          {loading && (
+            <div className={styles.loa}>
+              <SyncLoader color="#da3a00" loading={loading} size={18} />
+            </div>
+          )}
         </div>
       )}
       {!quiz && (

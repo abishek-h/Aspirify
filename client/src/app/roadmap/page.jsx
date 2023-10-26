@@ -85,7 +85,7 @@ const Roadmap = () => {
       {!roadmap && (
         <div>
           <button
-            className="text-[2rem] mb-[1rem] text-[#da3a00] ml-[2.5rem] mt-[1rem] border-[1px] p-[.7rem] border-[#da3a00] font-light transition-all hover:scale-[1.1] duration-150"
+            className="text-[1.85rem] mb-[1rem] text-[#da3a00] ml-[2.5rem] mt-[1rem] border-[1px] pt-[.4rem] pl-[.6rem] pr-[.6rem] pb-[.4rem] border-[#da3a00] font-light transition-all hover:scale-[1.1] duration-150"
             onClick={() => {
               setroadmap(true);
             }}
@@ -93,7 +93,7 @@ const Roadmap = () => {
             &#60; Back
           </button>
           <div>
-            <img src={`${rd}.webp`} className="w-[90vw] ml-auto mr-auto"></img>
+            <img src={`${rd}.webp`} className="w-[65vw] ml-auto mr-auto"></img>
           </div>
         </div>
       )}

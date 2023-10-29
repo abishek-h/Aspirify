@@ -85,7 +85,7 @@ const Roadmap = () => {
       {!roadmap && (
         <div>
           <button
-            className="text-[1.85rem] mb-[1rem] text-[#da3a00] ml-[2.5rem] mt-[1rem] border-[1px] pt-[.4rem] pl-[.6rem] pr-[.6rem] pb-[.4rem] border-[#da3a00] font-light transition-all hover:scale-[1.1] duration-150"
+            className="text-[1.6rem] mb-[1rem] text-[#da3a00] ml-[2.5rem] mt-[1rem] border-[1px] pt-[.4rem] pl-[.6rem] pr-[.6rem] pb-[.4rem] border-[#da3a00] font-light transition-all hover:scale-[1.1] duration-150"
             onClick={() => {
               setroadmap(true);
             }}

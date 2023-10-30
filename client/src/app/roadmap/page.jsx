@@ -44,7 +44,7 @@ const Roadmap = () => {
             <div className="text-[#da3a00] mt-[0.3rem] text-[1.5rem]  text-center inline-block">
               Role-based
             </div>
-            <div className="ml-auto mr-auto flex min-h-[17vh] gap-x-[1rem] mt-[0.5rem] w-[80%] flex-wrap justify-center">
+            <div className="ml-auto mr-auto flex min-h-[17vh] gap-x-[1rem] mt-[0.5rem] w-[60%] flex-wrap justify-center">
               {roles.map((role) => {
                 return (
                   <button

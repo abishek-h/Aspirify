@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Degree = () => {
   const why = [
@@ -32,7 +33,7 @@ const Degree = () => {
         backgroundPositionX: -100,
       }}
     >
-      <div className="w-[97vw] ml-auto mr-auto min-w-[1100px] p-[1rem]">
+      <div className="w-[96vw] ml-auto mr-auto min-w-[1100px] pr-[2.5rem] pl-[2.5rem] pt-[1rem]">
         <div className="text-[1.3rem]">
           Welcome to our{" "}
           <span className="text-[#da3a00] font-medium">master's</span> and{" "}
@@ -42,12 +43,16 @@ const Degree = () => {
           degree programs here.
         </div>
         <div className="mt-[0.8rem]">
-          <button className="text-[1.35rem] border-solid border-[1px] border-[#da3a00] h-[4.5rem] w-[10rem] p-[.5rem] text-justify bg-white text-[#da3a00] mr-[1.5rem] shadow-[3.5px_3.5px_rgba(218,58,0,0.85)] transition-all hover:scale-[1.1] duration-200">
-            Bachelor's Degrees
-          </button>
-          <button className="text-[1.35rem] border-solid border-[1px] border-[#da3a00] h-[4.5rem] w-[10rem] p-[.5rem] text-justify bg-white text-[#da3a00] shadow-[3.5px_3.5px_rgba(218,58,0,0.85)] transition-all hover:scale-[1.1] duration-200">
-            Master's Degrees
-          </button>
+          <Link href="/degree/bachelor">
+            <button className="text-[1.35rem] border-solid border-[1px] border-[#da3a00] h-[4.5rem] w-[10rem] p-[.5rem] text-justify bg-white text-[#da3a00] mr-[1.5rem] shadow-[3.5px_3.5px_rgba(218,58,0,0.85)] transition-all hover:scale-[1.1] duration-200">
+              Bachelor's Degrees
+            </button>
+          </Link>
+          <Link href="/degree/master">
+            <button className="text-[1.35rem] border-solid border-[1px] border-[#da3a00] h-[4.5rem] w-[10rem] p-[.5rem] text-justify bg-white text-[#da3a00] shadow-[3.5px_3.5px_rgba(218,58,0,0.85)] transition-all hover:scale-[1.1] duration-200">
+              Master's Degrees
+            </button>
+          </Link>
         </div>
         <div>
           <div className="text-[1.5rem] mt-[1.5rem] text-[#da3a00] font-medium">
@@ -61,7 +66,7 @@ const Degree = () => {
         </div>
         <div>
           <div className="text-[1.5rem] text-[#da3a00] font-medium mt-[1rem]">
-            Master's degree
+            Master's Degree
           </div>
           <div className="text-[1.25rem] mt-[.5rem]">
             A master's degree is a two-year graduate degree that provides

@@ -28,7 +28,7 @@ const Degree = () => {
     <div
       className="h-[85vh] mt-[.5rem]"
       style={{
-        background: `url("degre.webp")`,
+        background: `url("./degre.webp")`,
         backgroundPositionY: -500,
         backgroundPositionX: -100,
       }}

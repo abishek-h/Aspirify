@@ -2,7 +2,7 @@
 This project establishes a Career Guidance System to help users make educated career selections. It uses the KNN algorithm and combines the characteristics of Next.js and Python Flask to provide a robust and user-friendly experience.
 
 ## About
-Aspirify solves the problem of navigating career paths by offering a data-driven recommendation engine. Users may input their talents, hobbies, and educational background, and the system will use the KNN algorithm to match them with appropriate employment alternatives.
+Aspirify solves the problem of navigating career paths by offering a data-driven recommendation system. Users may input their talents, hobbies, and educational background, and the system will use the KNN algorithm to match them with appropriate employment alternatives.
 
 ## Features
 - KNN-powered Recommendations: Uses the K-Nearest Neighbors algorithm to recommend appropriate career pathways based on user-supplied information.
